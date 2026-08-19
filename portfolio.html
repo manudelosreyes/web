@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Manu de los Reyes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header dark-header">
+  <a class="logo" href="index.html">manudelosreyes</a>
+  <button class="menu-button" aria-label="Abrir menú"><span></span><span></span></button>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a class="active" href="portfolio.html">Portfolio</a>
+    <a href="index.html#sobre-mi">¿Quién soy?</a>
+    <a href="index.html#contacto">Contacta</a>
+  </nav>
+</header>
+
+<main>
+<section class="portfolio-hero">
+  <img class="hero-image" src="images/portfolio/portfolio-hero.jpg" alt="Portfolio">
+  <div class="hero-shade"></div>
+  <div class="portfolio-title">
+    <span class="index">01</span>
+    <h1>Portfolio</h1>
+    <p>Instantes que cuentan historias.</p>
+  </div>
+</section>
+
+<section class="portfolio-intro">
+  <p>Una selección de momentos reales, emociones y personas que he tenido la suerte de fotografiar.</p>
+</section>
+
+<div class="filters" aria-label="Filtrar portfolio">
+  <button class="active" data-filter="all">Todas</button>
+  <button data-filter="bodas">Bodas</button>
+  <button data-filter="familias">Familias</button>
+  <button data-filter="sesiones">Sesiones</button>
+  <button data-filter="premama">Premamá</button>
+  <button data-filter="comuniones">Comuniones</button>
+</div>
+
+<section class="gallery" id="portfolio-gallery" aria-live="polite"></section>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Cerrar">×</button>
+  <button class="lightbox-prev" aria-label="Fotografía anterior">‹</button>
+  <div class="lightbox-content">
+    <img id="lightbox-image" src="" alt="">
+    <div class="lightbox-info">
+      <span id="lightbox-category"></span>
+      <span id="lightbox-counter"></span>
+    </div>
+  </div>
+  <button class="lightbox-next" aria-label="Fotografía siguiente">›</button>
+</div>
+</main>
+
+<footer>
+  <div><strong>manudelosreyes</strong><small>Fotografía natural, cercana y auténtica.</small></div>
+  <div class="footer-social"><a href="index.html">Inicio</a><a href="index.html#contacto">Contacta</a></div>
+  <div><small>© 2026 Manu de los Reyes</small></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
